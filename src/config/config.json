@@ -1,13 +1,6 @@
 {
-    "database": {
-        "username": "DATABASE_USERNAME",
-        "database": "DATABASE_NAME",
-        "password": "DATABASE_PASSWORD",
-        "host": "DATABASE_HOST",
-        "port": "DATABASE_PORT"
-    },
-
     "discord": {
-        "token": "DISCORD_BOT_TOKEN"
+        "token": "NzU5NDAyMDU3NzE4OTU2MDMz.X28-Rw.0Xmr9OpiG03C2nnCq6RDxmS9C2E",
+        "prefix": "?"
     }
 }
