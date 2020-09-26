@@ -1,0 +1,13 @@
+{
+    "database": {
+        "username": "DATABASE_USERNAME",
+        "database": "DATABASE_NAME",
+        "password": "DATABASE_PASSWORD",
+        "host": "DATABASE_HOST",
+        "port": "DATABASE_PORT"
+    },
+
+    "discord": {
+        "token": "DISCORD_BOT_TOKEN"
+    }
+}
