@@ -1,6 +1,7 @@
 //index.js//
 //node.js imports
 const fs = require("fs");
+const fetch = require('node-fetch');
 const time = date => `${new Date(date).getHours()}:${new Date(date).getMinutes()}:${new Date(date).getSeconds()}`;
 
 // discord.js init
@@ -22,5 +23,5 @@ client.on(`message`, (message) => {
     new Headline(message, config, language, client).command();
 });
 
-// Login to Discord Api
+
 client.login(config.discord.token);
