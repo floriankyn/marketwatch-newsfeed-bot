@@ -14,29 +14,30 @@ class Headline{
         if(this.message.channel.type !== "dm") {
             if(this.args[0] === this.prefix + "show") {
                 let data = [];
+
                 setInterval(() => {
                     let url = "https://www.marketwatch.com/latest-news?mod=top_nav";
                     axios.get(url).then(response => {
                         getData(response.data);
                     }).catch(console.error);
-                }, 10000)
+                }, 5000)
+
                 let getData = html => {
                     const $ = cheerio.load(html);
                     let headLine = $("html body div div div div div div.element.element--article div.article__content h3.article__headline a.link");
                     let linkToHeadline = headLine.first().attr("href");
                     let headlineFormatted = headLine.first().text()
+
                     if(typeof data[0] === "undefined") {
                         data.push(headlineFormatted);
                         let channel = this.message.guild.channels.cache.find(channel => channel.id === this.channel);
                         channel.send(this.embed(`[${headlineFormatted}](${linkToHeadline})`)).then().catch(console.error);
-                    } else if(data[0] !== headlineFormatted) {
-                        data.pop();
+                    } else if(!data.includes(headlineFormatted)) {
                         data.push(headlineFormatted);
                         let channel = this.message.guild.channels.cache.find(channel => channel.id === this.channel);
                         channel.send(this.embed(`[${headlineFormatted}](${linkToHeadline})`)).then().catch(console.error);
                     }
                 }
-
             }
         }
     }
