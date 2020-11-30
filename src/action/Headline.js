@@ -8,7 +8,7 @@ class Headline{
         this.message = message;
         this.args = message.content.slice().split(/ /);
         this.prefix = config.discord.prefix;
-        this.channel = "729554321578131556";
+        this.channel = config.discord.channel_id;
     }
     command() {
         if(this.message.channel.type !== "dm") {
