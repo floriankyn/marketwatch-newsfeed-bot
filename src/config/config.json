@@ -1,6 +1,7 @@
 {
     "discord": {
-        "token": "NzU5NDAyMDU3NzE4OTU2MDMz.X28-Rw.5c7yYFrzCUVYfQo4kZl9HcZC2OA",
-        "prefix": "?"
+        "token": "BOT_TOKEN",
+        "prefix": "BOT_PREFIX",
+	"channel_id": "CHANNEL_ID"
     }
 }
