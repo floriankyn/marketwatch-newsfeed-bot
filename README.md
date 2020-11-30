@@ -1,6 +1,6 @@
 # [Marketwatch](https://www.marketwatch.com/) Newsfeed Discord Bot
 A discord newsfeed bot, built on top of <a href="https://discord.js.org">discord.js</a>.
-<img src="http://www.google.com.au/images/nav_logo7.png">
+<img src="https://i.imgur.com/iuFdZd5.png">
 ## Features
  Send in a predefined channel all the latest headlines from marketwatch
  ## System
