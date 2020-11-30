@@ -18,10 +18,7 @@ const {Headline} = require("./action/Headline.js");
 // Client event
 client.on('ready', () => {
     console.log(`[${time(Date.now())}] The client "${client.user.tag} has been connected."`); // check if the client has been logged.
+    new Headline(config, language, client).on();
 });
-client.on(`message`, (message) => {
-    new Headline(message, config, language, client).command();
-});
-
 
 client.login(config.discord.token);
