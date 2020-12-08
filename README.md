@@ -1,10 +1,11 @@
 # [Marketwatch](https://www.marketwatch.com/) Newsfeed Discord Bot
 A discord newsfeed bot, built on top of <a href="https://discord.js.org">discord.js</a>.
-<img src="https://i.imgur.com/iuFdZd5.png">
+<img src="https://i.imgur.com/R2AiJKK.png"></img>
 ## Features
- Send in a predefined channel all the latest headlines from marketwatch
- ## System
- Web scraping based, this bot will load each X time the web page and get the latest result. If the result is new and not the same as before, the bot will send a message in the definied channel, else it will do nothing. Each Headline is store in an object to make sure the bot dosen't fetch the same data again and again. 
+Send in a predefined channel all the latest headlines from marketwatch
+<img src="https://i.imgur.com/iuFdZd5.png"></img>
+## System
+Web scraping based, this bot will load each X time the web page and get the latest result. If the result is new and not the same as before, the bot will send a message in the definied channel, else it will do nothing. Each Headline is store in an object to make sure the bot dosen't fetch the same data again and again. 
 ## Installation
 This bot runs on [node.js](https://nodejs.org). You will need at least node 12.
 ## General
